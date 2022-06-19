@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Zoologico</string>
+    <string name="titulo">Adicione aqui o nome do animal que você quer adicionar no app e sua descrição. Use a criatividade!</string>
+    <string name="nome_do_animal">Nome do animal</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="nome_animal">teste</string>
+    <string name="imagem_pata">imagem pata de um panda</string>
+    <string name="descricao_do_animal">Descrição do animal</string>
+</resources>

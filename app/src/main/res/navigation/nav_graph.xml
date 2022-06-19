@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cadastroAnimalFragment">
+
+    <fragment
+        android:id="@+id/animaisCadastradosFragment"
+        android:name="br.com.zup.zoologico.cadastro.AnimaisCadastradosFragment"
+        android:label="fragment_animais_cadastrados"
+        tools:layout="@layout/fragment_animais_cadastrados" >
+        <argument
+            android:name="animal"
+            app:argType="br.com.zup.zoologico.model.Animal" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroAnimalFragment"
+        android:name="br.com.zup.zoologico.cadastro.CadastroAnimalFragment"
+        android:label="fragment_cadastro_animal"
+        tools:layout="@layout/fragment_cadastro_animal" >
+        <action
+            android:id="@+id/action_cadastroAnimalFragment_to_animaisCadastradosFragment"
+            app:destination="@id/animaisCadastradosFragment" />
+    </fragment>
+</navigation>
